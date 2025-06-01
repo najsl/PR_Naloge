@@ -66,7 +66,7 @@ elif menu == "2. Primerjava dveh filmov":
     def film_stat(ratings):
         return {
             "Povprečna ocena": round(ratings["rating"].mean(), 2),
-            "Število ocen": ratings["rating"].count(),
+            "Število ocen": int(ratings["rating"].count()),
             "Std. odklon": round(ratings["rating"].std(), 2)
         }
 
